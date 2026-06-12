@@ -22,7 +22,7 @@ function App() {
         "https://n8n.srv1650382.hstgr.cloud/webhook/0056db8d-08fc-422d-9cae-dadaa7e9dd54",
         {
           headers: {
-            Authorization: `Bearer ${import.meta.env.N8N_TOKEN}`,
+            Bearer: `${import.meta.env.N8N_TOKEN}`,
           },
         },
       );
