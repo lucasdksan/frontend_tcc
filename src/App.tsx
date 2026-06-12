@@ -20,6 +20,11 @@ function App() {
     try {
       const response = await fetch(
         "https://n8n.srv1650382.hstgr.cloud/webhook/0056db8d-08fc-422d-9cae-dadaa7e9dd54",
+        {
+          headers: {
+            Authorization: `Bearer ${import.meta.env.N8N_TOKEN}`,
+          },
+        },
       );
       const data = await response.text();
       const parsed = JSON.parse(data) as Diagnostico;
