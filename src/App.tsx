@@ -19,7 +19,7 @@ function App() {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://n8n.srv1650382.hstgr.cloud/webhook-test/0056db8d-08fc-422d-9cae-dadaa7e9dd54",
+        "https://n8n.srv1650382.hstgr.cloud/webhook/0056db8d-08fc-422d-9cae-dadaa7e9dd54",
       );
       const data = await response.text();
       const parsed = JSON.parse(data) as Diagnostico;
